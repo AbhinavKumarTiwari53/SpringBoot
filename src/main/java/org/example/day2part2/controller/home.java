@@ -6,9 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class home {
+
     @GetMapping("/about")
     public StudentModel getStudent(){
         StudentModel student = new StudentModel(1, "Abhinav","example@mail.com");
         return student;
     }
+
 }
